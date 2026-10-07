@@ -19,6 +19,8 @@ export async function POST(request) {
 
   const file = formData.get("photo");
   const organ = formData.get("organ") || "leaf";
+  const langRaw = formData.get("lang");
+  const lang = ["ru", "kk", "en"].includes(langRaw) ? langRaw : "ru";
 
   if (!file || typeof file === "string") {
     return NextResponse.json({ ok: false, message: "Фотография не найдена в запросе." }, { status: 400 });
@@ -56,6 +58,7 @@ export async function POST(request) {
       imageBase64,
       mimeType,
       plantnetResults,
+      lang,
     });
   } catch (err) {
     return NextResponse.json(

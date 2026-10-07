@@ -12,7 +12,7 @@ function todayLabel() {
 }
 
 export default function IdentifyPage() {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
   const fileInputRef = useRef(null);
   const cameraInputRef = useRef(null);
 
@@ -86,6 +86,7 @@ export default function IdentifyPage() {
       const formData = new FormData();
       formData.append("photo", file);
       formData.append("organ", organ);
+      formData.append("lang", lang);
 
       const res = await fetch("/api/identify", { method: "POST", body: formData });
       const data = await res.json();
