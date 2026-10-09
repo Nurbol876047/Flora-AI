@@ -95,7 +95,7 @@ export const plantTextById = {
   "haloxylon-aphyllum": {
     description: {
       kk: "Биіктігі 7–9 м-ге дейінгі жапырағын тастайтын ағаш немесе ірі бұта, жапырақ қызметін атқаратын жасыл буынды бұтақтары бар. Қабығы қою сұр, жарықшақты. Өңірдің құмды және сазды шөлдерінің негізгі орман түзуші тұқымы.",
-      en: "A deciduous tree or large shrub up to 7–9 m tall with leafless green jointed shoots that perform the function of leaves. Bark dark grey, fissured. The main forest-forming species of the sandy and clay deserts of the Aral Sea region.",
+      en: "A deciduous tree or large shrub up to 7–9 m tall with leafless green jointed shoots that perform the function of leaves. Bark dark grey, fissured. The main forest-forming species of the sandy and clay deserts of the region.",
     },
     folkUse: {
       kk: "Ағашы — шөлдің ең жақсы отыны (сексеуіл көмірі), бұтақтары — жем тапшылығында малға азық.",
@@ -125,7 +125,7 @@ export const plantTextById = {
   "calligonum-caput-medusae": {
     description: {
       kk: "Жұқа жасыл тармақталған бұтақтары және шумаққа ұқсас шар тәрізді тікенді жемістері бар жапырақсыз бұта. Өңір құмтөбелерінің тән бекітушісі.",
-      en: "A leafless shrub with thin branching green shoots and spherical spiny fruits resembling a tangled ball. A typical stabiliser of dune sands in the Aral Sea region.",
+      en: "A leafless shrub with thin branching green shoots and spherical spiny fruits resembling a tangled ball. A typical stabiliser of dune sands in the region.",
     },
     folkUse: {
       kk: "Қыстаулар маңындағы құмтөбелерді бекіту, жас бұтақтары — түйеге азық.",
@@ -159,7 +159,7 @@ export const plantTextById = {
   "salsola-orientalis": {
     description: {
       kk: "Шырынды цилиндр тәрізді жапырақтары бар шала бұта, өңірдің сортаң топырақтары мен тақырларының тән галофиті. Сортаң топырақтарды белсенді мекендейтін түрлердің бірі.",
-      en: "A subshrub with succulent cylindrical leaves, a typical halophyte of the saline soils and takyrs of the Aral Sea region. One of the species actively colonising the dried-up bed of the Aral Sea.",
+      en: "A subshrub with succulent cylindrical leaves, a typical halophyte of the saline soils and takyrs of the region. One of the species actively colonising saline soils.",
     },
     folkUse: {
       kk: "Күзде және қыста қой мен түйеге жайылымдық азық.",
@@ -243,7 +243,7 @@ export const plantTextById = {
   "halocnemum-strobilaceum": {
     description: {
       kk: "Буынды шырынды бұтақтары бар аласа, тығыз галофит бұташа, сортаңдарда тұтас тоғай түзеді. Өңірдің тұзға ең төзімді түрлерінің бірі.",
-      en: "A low, dense halophytic dwarf shrub with jointed succulent shoots, forming continuous stands on salt flats, including the dried-up bed of the Aral Sea. One of the most salt-tolerant species of the region.",
+      en: "A low, dense halophytic dwarf shrub with jointed succulent shoots, forming continuous stands on salt flats of the region. One of the most salt-tolerant species of the region.",
     },
     folkUse: {
       kk: "Сусыз кезеңде сортаңдардағы түйеге жайылымдық азық.",
