@@ -52,7 +52,7 @@ export const dictionaries = {
         family: "Семейство",
         description: "Описание",
         habitat: "Где растёт",
-        grows_in_region: "Встречается в Кызылординской области",
+        grows_in_region: "Встречается в Северо-Казахстанской области",
         toxicity: "Ядовитость",
         protected_status: "Охранный статус",
         similar: "Похожие виды",
@@ -82,7 +82,7 @@ export const dictionaries = {
     flora: {
       title: "Флора края",
       intro:
-        "Характерные виды растений Кызылординской области и Приаралья: пустынные, полупустынные и прибрежные сообщества бассейна Сырдарьи и Аральского моря.",
+        "Характерные виды растений Северо-Казахстанской области: степные, лесостепные и прибрежные сообщества региона.",
       searchPlaceholder: "Поиск по названию (рус., қаз., латынь)…",
       familyAll: "Все семейства",
       habitatAll: "Все местообитания",
@@ -146,7 +146,7 @@ export const dictionaries = {
       title: "О проекте",
       goalTitle: "Цель",
       goal:
-        "Flora AI — учебный исследовательский инструмент для полевого определения растений Кызылординской области и Приаралья силами школьников и краеведов. Проект создан как вспомогательное средство фиксации наблюдений, а не как замена ботанической экспертизы.",
+        "Flora AI — учебный исследовательский инструмент для полевого определения растений Северо-Казахстанской области силами школьников и краеведов. Проект создан как вспомогательное средство фиксации наблюдений, а не как замена ботанической экспертизы.",
       methodTitle: "Методика",
       method:
         "Определение выполняется в два этапа. Сначала фотография передаётся в открытую ботаническую базу Pl@ntNet, которая по визуальным признакам предлагает до трёх вероятных видов с оценкой уверенности. Затем фотография и результаты Pl@ntNet передаются языковой модели, которая формирует итоговое описание: названия на русском и казахском языках, семейство, внешние признаки, место обитания, сведения о встречаемости в регионе, ядовитости и охранном статусе, а также отличия от похожих видов.",
@@ -222,7 +222,7 @@ export const dictionaries = {
         family: "Тұқымдасы",
         description: "Сипаттамасы",
         habitat: "Өсетін жері",
-        grows_in_region: "Қызылорда облысында кездеседі",
+        grows_in_region: "Солтүстік Қазақстан облысында кездеседі",
         toxicity: "Улылығы",
         protected_status: "Қорғау мәртебесі",
         similar: "Ұқсас түрлер",
@@ -252,7 +252,7 @@ export const dictionaries = {
     flora: {
       title: "Өңір флорасы",
       intro:
-        "Қызылорда облысы мен Арал өңіріне тән өсімдік түрлері: Сырдария алабы мен Арал теңізінің шөл, шөлейт және жағалау қауымдастықтары.",
+        "Солтүстік Қазақстан облысына тән өсімдік түрлері: дала, орманды дала және өңірдің жағалау қауымдастықтары.",
       searchPlaceholder: "Атауы бойынша іздеу (орыс., қаз., латын)…",
       familyAll: "Барлық тұқымдастар",
       habitatAll: "Барлық өсу орындары",
@@ -316,7 +316,7 @@ export const dictionaries = {
       title: "Жоба туралы",
       goalTitle: "Мақсаты",
       goal:
-        "Flora AI — Қызылорда облысы мен Арал өңірінің өсімдіктерін далалық анықтауға арналған оқу-зерттеу құралы. Жоба бақылауларды тіркеуге көмекші құрал ретінде жасалған, ботаникалық сараптаманы алмастырмайды.",
+        "Flora AI — Солтүстік Қазақстан облысының өсімдіктерін далалық анықтауға арналған оқу-зерттеу құралы. Жоба бақылауларды тіркеуге көмекші құрал ретінде жасалған, ботаникалық сараптаманы алмастырмайды.",
       methodTitle: "Әдістеме",
       method:
         "Анықтау екі кезеңде жүреді. Алдымен фотосурет Pl@ntNet ашық ботаникалық дерекқорына жіберіледі, ол визуалды белгілер бойынша дәлдігі көрсетілген үш түрге дейін ұсынады. Содан кейін фотосурет пен Pl@ntNet нәтижелері тілдік модельге беріледі, ол орысша және қазақша атауларды, тұқымдасын, сырт белгілерін, өсу ортасын, өңірде кездесуін, улылығын, қорғау мәртебесін және ұқсас түрлерден айырмашылығын қалыптастырады.",
@@ -392,7 +392,7 @@ export const dictionaries = {
         family: "Family",
         description: "Description",
         habitat: "Habitat",
-        grows_in_region: "Found in Kyzylorda Region",
+        grows_in_region: "Found in North Kazakhstan Region",
         toxicity: "Toxicity",
         protected_status: "Protection status",
         similar: "Similar species",
@@ -422,7 +422,7 @@ export const dictionaries = {
     flora: {
       title: "Regional flora",
       intro:
-        "Characteristic plant species of Kyzylorda Region and the Aral Sea area: desert, semi-desert and riparian communities of the Syr Darya basin and the Aral Sea.",
+        "Characteristic plant species of North Kazakhstan Region: steppe, forest-steppe and riparian communities of the region.",
       searchPlaceholder: "Search by name (Russian, Kazakh, Latin)…",
       familyAll: "All families",
       habitatAll: "All habitats",
@@ -486,7 +486,7 @@ export const dictionaries = {
       title: "About the project",
       goalTitle: "Goal",
       goal:
-        "Flora AI is an educational research tool for the field identification of plants of Kyzylorda Region and the Aral Sea area, built for schoolchildren and local history enthusiasts. The project is meant as an aid for recording observations, not a replacement for botanical expertise.",
+        "Flora AI is an educational research tool for the field identification of plants of North Kazakhstan Region, built for schoolchildren and local history enthusiasts. The project is meant as an aid for recording observations, not a replacement for botanical expertise.",
       methodTitle: "Method",
       method:
         "Identification runs in two steps. First, the photo is sent to the open botanical database Pl@ntNet, which suggests up to three likely species with a confidence score based on visual features. Then the photo and the Pl@ntNet results are passed to a language model, which produces the final description: names in Russian and Kazakh, family, appearance, habitat, occurrence in the region, toxicity and protection status, and differences from similar species.",
