@@ -1,5 +1,5 @@
-// Серверный клиент OpenAI. Вызывается только из src/app/api/identify/route.js.
-// Ключ OPENAI_API_KEY никогда не передаётся на фронтенд.
+// Серверный клиент OpenAI. Вызывается только из src/app/api/identify/route.js
+// и src/app/api/flora-search/route.js. Ключ OPENAI_API_KEY никогда не передаётся на фронтенд.
 
 const OPENAI_ENDPOINT = "https://api.openai.com/v1/chat/completions";
 
@@ -142,4 +142,76 @@ function normalizeLLMResult(raw) {
         ? Math.max(0, Math.min(100, Math.round(raw.self_confidence)))
         : null,
   };
+}
+
+function buildFloraSearchPrompt(textLang) {
+  return `Ты помогаешь искать растения в каталоге "Флора края" по словесному описанию пользователя
+(описание может быть на русском, казахском или английском языке — языке ответа: ${textLang}).
+
+Тебе дают список растений каталога в формате JSON (поле "id" — обязательный идентификатор) и
+текстовый запрос пользователя, например "колючий кустарник с розовыми цветками" или
+"жёлтые весенние цветы на лугу". Запрос может не совпадать дословно с текстом описаний —
+подбирай растения по смыслу (внешний вид, цвет, место обитания, форма листьев и т.п.).
+
+Верни СТРОГО JSON без markdown, одним объектом:
+{ "ids": ["id1", "id2", ...] }
+
+Правила:
+- В "ids" — только id из переданного списка, не придумывай новые.
+- Упорядочи от наиболее подходящего к наименее подходящему, не больше 8 элементов.
+- Если ни одно растение не подходит по смыслу, верни пустой массив.
+- Ответ — только JSON, без текста до или после.`;
+}
+
+export async function searchPlantsByDescription({ query, lang, candidates }) {
+  const apiKey = process.env.OPENAI_API_KEY;
+  if (!apiKey) {
+    throw new Error("OPENAI_API_KEY не задан в .env.local");
+  }
+  const model = process.env.OPENAI_MODEL || "gpt-4o-mini";
+  const textLang = RESPONSE_LANGUAGE_NAMES[lang] || RESPONSE_LANGUAGE_NAMES.ru;
+
+  const body = {
+    model,
+    temperature: 0,
+    response_format: { type: "json_object" },
+    messages: [
+      { role: "system", content: buildFloraSearchPrompt(textLang) },
+      {
+        role: "user",
+        content: `Каталог растений (JSON):\n${JSON.stringify(candidates)}\n\nЗапрос пользователя: ${query}`,
+      },
+    ],
+  };
+
+  const response = await fetch(OPENAI_ENDPOINT, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${apiKey}`,
+    },
+    body: JSON.stringify(body),
+  });
+
+  if (!response.ok) {
+    const text = await response.text().catch(() => "");
+    throw new Error(`OpenAI ответил с ошибкой ${response.status}: ${text.slice(0, 300)}`);
+  }
+
+  const data = await response.json();
+  const raw = data.choices?.[0]?.message?.content;
+  if (!raw) {
+    throw new Error("OpenAI вернул пустой ответ");
+  }
+
+  let parsed;
+  try {
+    parsed = JSON.parse(raw);
+  } catch {
+    throw new Error("Не удалось разобрать JSON от языковой модели");
+  }
+
+  const validIds = new Set(candidates.map((c) => c.id));
+  const ids = Array.isArray(parsed.ids) ? parsed.ids.filter((id) => validIds.has(id)) : [];
+  return ids.slice(0, 8);
 }
