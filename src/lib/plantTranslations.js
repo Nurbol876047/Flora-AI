@@ -94,7 +94,7 @@ export const leafTypeLabels = {
 export const plantTextById = {
   "haloxylon-aphyllum": {
     description: {
-      kk: "Биіктігі 7–9 м-ге дейінгі жапырағын тастайтын ағаш немесе ірі бұта, жапырақ қызметін атқаратын жасыл буынды бұтақтары бар. Қабығы қою сұр, жарықшақты. Арал өңірі құмды және сазды шөлдерінің негізгі орман түзуші тұқымы.",
+      kk: "Биіктігі 7–9 м-ге дейінгі жапырағын тастайтын ағаш немесе ірі бұта, жапырақ қызметін атқаратын жасыл буынды бұтақтары бар. Қабығы қою сұр, жарықшақты. Өңірдің құмды және сазды шөлдерінің негізгі орман түзуші тұқымы.",
       en: "A deciduous tree or large shrub up to 7–9 m tall with leafless green jointed shoots that perform the function of leaves. Bark dark grey, fissured. The main forest-forming species of the sandy and clay deserts of the Aral Sea region.",
     },
     folkUse: {
@@ -124,7 +124,7 @@ export const plantTextById = {
   },
   "calligonum-caput-medusae": {
     description: {
-      kk: "Жұқа жасыл тармақталған бұтақтары және шумаққа ұқсас шар тәрізді тікенді жемістері бар жапырақсыз бұта. Арал өңірі құмтөбелерінің тән бекітушісі.",
+      kk: "Жұқа жасыл тармақталған бұтақтары және шумаққа ұқсас шар тәрізді тікенді жемістері бар жапырақсыз бұта. Өңір құмтөбелерінің тән бекітушісі.",
       en: "A leafless shrub with thin branching green shoots and spherical spiny fruits resembling a tangled ball. A typical stabiliser of dune sands in the Aral Sea region.",
     },
     folkUse: {
@@ -158,7 +158,7 @@ export const plantTextById = {
   },
   "salsola-orientalis": {
     description: {
-      kk: "Шырынды цилиндр тәрізді жапырақтары бар шала бұта, Арал өңірінің сортаң топырақтары мен тақырларының тән галофиті. Арал теңізінің құрғаған түбін белсенді мекендейтін түрлердің бірі.",
+      kk: "Шырынды цилиндр тәрізді жапырақтары бар шала бұта, өңірдің сортаң топырақтары мен тақырларының тән галофиті. Сортаң топырақтарды белсенді мекендейтін түрлердің бірі.",
       en: "A subshrub with succulent cylindrical leaves, a typical halophyte of the saline soils and takyrs of the Aral Sea region. One of the species actively colonising the dried-up bed of the Aral Sea.",
     },
     folkUse: {
@@ -232,8 +232,8 @@ export const plantTextById = {
   },
   "ceratocarpus-arenarius": {
     description: {
-      kk: "Көзге түспейтін дара жынысты гүлдері бар шөл мен шөлейттің біржылдық шөптесін өсімдігі. Қызылорда облысының көктемгі жайылымдық өсімдіктерінің ең маңыздыларының бірі.",
-      en: "An annual herbaceous desert and semi-desert plant with inconspicuous unisexual flowers. One of the most important spring pasture plants of Kyzylorda Region.",
+      kk: "Көзге түспейтін дара жынысты гүлдері бар шөл мен шөлейттің біржылдық шөптесін өсімдігі. Өңірдің көктемгі жайылымдық өсімдіктерінің ең маңыздыларының бірі.",
+      en: "An annual herbaceous desert and semi-desert plant with inconspicuous unisexual flowers. One of the most important spring pasture plants of the region.",
     },
     folkUse: {
       kk: "Шөлде қой мен түйеге бағалы көктемгі жайылымдық азық.",
@@ -242,7 +242,7 @@ export const plantTextById = {
   },
   "halocnemum-strobilaceum": {
     description: {
-      kk: "Буынды шырынды бұтақтары бар аласа, тығыз галофит бұташа, сортаңдарда, соның ішінде Арал теңізінің құрғаған түбінде тұтас тоғай түзеді. Өңірдің тұзға ең төзімді түрлерінің бірі.",
+      kk: "Буынды шырынды бұтақтары бар аласа, тығыз галофит бұташа, сортаңдарда тұтас тоғай түзеді. Өңірдің тұзға ең төзімді түрлерінің бірі.",
       en: "A low, dense halophytic dwarf shrub with jointed succulent shoots, forming continuous stands on salt flats, including the dried-up bed of the Aral Sea. One of the most salt-tolerant species of the region.",
     },
     folkUse: {
@@ -332,8 +332,8 @@ export const plantTextById = {
   },
   "tulipa-borszczowii": {
     description: {
-      kk: "Шренк тюльпанына жақын туыс, гүлі ашық қызыл. Құмды және сазды шөлдерде, соның ішінде Қызылорда облысында (Байқоңыр маңында кездеседі) өседі.",
-      en: "A close relative of Tulipa schrenkii with a bright red flower. Grows in sandy and clay deserts, including Kyzylorda Region (found near Baikonur).",
+      kk: "Шренк тюльпанына жақын туыс, гүлі ашық қызыл. Құмды және сазды шөлдерде өседі.",
+      en: "A close relative of Tulipa schrenkii with a bright red flower. Grows in sandy and clay deserts.",
     },
     folkUse: {
       kk: "Сәндік маңызы бар; табиғатта жинауға және қазып алуға тыйым салынған — қорғалатын түр.",

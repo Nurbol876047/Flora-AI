@@ -1,5 +1,7 @@
 "use client";
 
+import { regionLabel } from "@/lib/kzRegions";
+
 const STORAGE_KEY = "flora_ai_journal";
 const MAX_THUMB_SIDE = 480; // хранить в localStorage уменьшенную копию фото
 
@@ -46,7 +48,7 @@ function formatSampleNumber(n) {
 }
 
 /**
- * @param {{ place: string, coords: {lat: number, lon: number}|null, thumbDataUrl: string, confidence: number|null, fallbackUsed: boolean, result: object }} entry
+ * @param {{ place: string, region: string, coords: {lat: number, lon: number}|null, thumbDataUrl: string, confidence: number|null, fallbackUsed: boolean, result: object }} entry
  */
 export function addEntry(entry) {
   const entries = getEntries();
@@ -56,6 +58,7 @@ export function addEntry(entry) {
     sampleNumber: formatSampleNumber(nextNumber),
     date: new Date().toISOString().slice(0, 10),
     place: entry.place || "",
+    region: entry.region || "",
     coords:
       entry.coords && typeof entry.coords.lat === "number" && typeof entry.coords.lon === "number"
         ? { lat: entry.coords.lat, lon: entry.coords.lon }
@@ -109,6 +112,7 @@ export function exportCsv(entries) {
     "Номер",
     "Дата",
     "Место",
+    "Область",
     "Широта",
     "Долгота",
     "Вид (рус.)",
@@ -121,6 +125,7 @@ export function exportCsv(entries) {
     e.sampleNumber,
     e.date,
     csvSafe(e.place),
+    csvSafe(regionLabel(e.region, "ru")),
     e.coords ? e.coords.lat : "",
     e.coords ? e.coords.lon : "",
     csvSafe(e.name_ru),

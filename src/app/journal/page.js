@@ -3,9 +3,10 @@
 import { useEffect, useMemo, useState } from "react";
 import { useLanguage } from "@/lib/i18n";
 import { deleteEntry, exportCsv, getEntries } from "@/lib/journalStorage";
+import { regionLabel } from "@/lib/kzRegions";
 
 export default function JournalPage() {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
   const [entries, setEntries] = useState([]);
   const [filter, setFilter] = useState("");
   const [sortKey, setSortKey] = useState("date");
@@ -80,6 +81,7 @@ export default function JournalPage() {
                 <th onClick={() => onSort("sampleNumber")}>{c.number}</th>
                 <th onClick={() => onSort("date")}>{c.date}</th>
                 <th onClick={() => onSort("place")}>{c.place}</th>
+                <th onClick={() => onSort("region")}>{c.region}</th>
                 <th onClick={() => onSort("name_ru")}>{c.species}</th>
                 <th onClick={() => onSort("confidence")}>{c.confidence}</th>
                 <th>{c.photo}</th>
@@ -92,6 +94,7 @@ export default function JournalPage() {
                   <td className="mono">{e.sampleNumber}</td>
                   <td className="mono">{e.date}</td>
                   <td>{e.place || "—"}</td>
+                  <td>{regionLabel(e.region, lang) || "—"}</td>
                   <td>
                     {e.name_ru} <span className="name-latin">({e.name_latin})</span>
                   </td>

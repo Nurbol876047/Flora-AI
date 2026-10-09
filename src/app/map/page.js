@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import { useLanguage } from "@/lib/i18n";
 import { entryCoords, getEntries } from "@/lib/journalStorage";
 
-const KYZYLORDA_CENTER = [44.848, 65.482];
+const ABAI_REGION_CENTER = [50.411, 80.228];
 
 export default function MapPage() {
   const { t, lang } = useLanguage();
@@ -25,7 +25,7 @@ export default function MapPage() {
         mapRef.current = null;
       }
 
-      const map = L.map(containerRef.current).setView(KYZYLORDA_CENTER, 7);
+      const map = L.map(containerRef.current).setView(ABAI_REGION_CENTER, 7);
       mapRef.current = map;
 
       L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {

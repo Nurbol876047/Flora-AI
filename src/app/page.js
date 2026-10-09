@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { gps as exifGps } from "exifr";
 import { useLanguage } from "@/lib/i18n";
 import { addEntry, getEntries, makeThumbnail } from "@/lib/journalStorage";
+import { kzRegions } from "@/lib/kzRegions";
 import HerbariumCard from "@/components/HerbariumCard";
 
 function todayLabel() {
@@ -20,6 +21,7 @@ export default function IdentifyPage() {
   const [previewUrl, setPreviewUrl] = useState(null);
   const [organ, setOrgan] = useState("leaf");
   const [place, setPlace] = useState("");
+  const [region, setRegion] = useState("abai");
   const [coords, setCoords] = useState(null);
   const [coordsSource, setCoordsSource] = useState(null); // "exif" | "geo" | null
   const [geolocating, setGeolocating] = useState(false);
@@ -108,6 +110,7 @@ export default function IdentifyPage() {
     const thumbDataUrl = await makeThumbnail(file).catch(() => null);
     addEntry({
       place,
+      region,
       coords,
       thumbDataUrl,
       confidence: response.confidence,
@@ -176,6 +179,16 @@ export default function IdentifyPage() {
                 {coordsSource === "exif" ? t.identify.coordsFromExif : t.identify.coordsFromGeo}
               </p>
             )}
+            <div className="field-row">
+              <span className="label-mono">{t.identify.region}</span>
+              <select value={region} onChange={(e) => setRegion(e.target.value)}>
+                {kzRegions.map((r) => (
+                  <option key={r.id} value={r.id}>
+                    {r[lang] || r.ru}
+                  </option>
+                ))}
+              </select>
+            </div>
             <div className="field-row">
               <span className="label-mono">{t.identify.organLabel}</span>
               <select value={organ} onChange={(e) => setOrgan(e.target.value)}>
