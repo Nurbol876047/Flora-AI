@@ -5,6 +5,8 @@
 export const habitatLabels = {
   "берег": { kk: "жағалау", en: "riverbank" },
   "горы": { kk: "таулар", en: "mountains" },
+  "лес": { kk: "орман", en: "forest" },
+  "луг": { kk: "шалғын", en: "meadow" },
   "пески": { kk: "құмдар", en: "sands" },
   "предгорья": { kk: "таулардың бөктері", en: "foothills" },
   "скалы": { kk: "жартастар", en: "rocky slopes" },
@@ -32,6 +34,13 @@ export const familyLabels = {
   "Парнолистниковые (Zygophyllaceae)": { kk: "Zygophyllaceae тұқымдасы", en: "Caltrop family (Zygophyllaceae)" },
   "Розовые (Rosaceae)": { kk: "Rosaceae тұқымдасы", en: "Rose family (Rosaceae)" },
   "Тамарисковые (Tamaricaceae)": { kk: "Tamaricaceae тұқымдасы", en: "Tamarisk family (Tamaricaceae)" },
+  "Берёзовые (Betulaceae)": { kk: "Betulaceae тұқымдасы", en: "Birch family (Betulaceae)" },
+  "Вересковые (Ericaceae)": { kk: "Ericaceae тұқымдасы", en: "Heath family (Ericaceae)" },
+  "Губоцветные (Lamiaceae)": { kk: "Lamiaceae тұқымдасы", en: "Mint family (Lamiaceae)" },
+  "Камнеломковые (Saxifragaceae)": { kk: "Saxifragaceae тұқымдасы", en: "Saxifrage family (Saxifragaceae)" },
+  "Лютиковые (Ranunculaceae)": { kk: "Ranunculaceae тұқымдасы", en: "Buttercup family (Ranunculaceae)" },
+  "Пионовые (Paeoniaceae)": { kk: "Paeoniaceae тұқымдасы", en: "Peony family (Paeoniaceae)" },
+  "Сосновые (Pinaceae)": { kk: "Pinaceae тұқымдасы", en: "Pine family (Pinaceae)" },
 };
 
 export const flowerColorLabels = {
@@ -54,6 +63,10 @@ export const flowerColorLabels = {
   "сиренево-фиолетовый": { kk: "сирень-күлгін", en: "lilac-purple" },
   "тёмно-розовый/пурпурный": { kk: "қою қызғылт/күлгін", en: "dark pink/purple" },
   "ярко-красный": { kk: "ашық қызыл", en: "bright red" },
+  "ярко-жёлтый": { kk: "ашық сары", en: "bright yellow" },
+  "розово-сиреневый": { kk: "қызғылт-сирень", en: "pink-lilac" },
+  "невзрачный (жёлтые шишечки)": { kk: "көзге түспейтін (сары бүршік)", en: "inconspicuous (yellow cones)" },
+  "невзрачный (метёлка с остью)": { kk: "көзге түспейтін (қылтанақты шашақ)", en: "inconspicuous (awned panicle)" },
 };
 
 export const leafTypeLabels = {
@@ -87,6 +100,29 @@ export const leafTypeLabels = {
   "широкий, волнистый, с бурыми пятнами": { kk: "кең, толқынды, қоңыр дақты", en: "broad, wavy, with brown blotches" },
   "широкий, сизо-зелёный": { kk: "кең, көкшіл-жасыл", en: "broad, glaucous-green" },
   "яйцевидный, пурпурно-красный": { kk: "жұмыртқа тәрізді, күлгін-қызыл", en: "ovate, purplish-red" },
+  "хвоя парная, сизо-зелёная": { kk: "қос инелі, көкшіл-жасыл", en: "paired needles, glaucous-green" },
+  "яйцевидно-ромбический, по краю зубчатый": { kk: "жұмыртқа-ромб тәрізді, жиегі тісті", en: "ovate-rhombic, toothed margin" },
+  "округлый, по краю волнисто-зубчатый, дрожащий на ветру": {
+    kk: "дөңгелек, жиегі толқынды-тісті, желде дірілдейтін",
+    en: "rounded, wavy-toothed margin, trembles in the wind",
+  },
+  "парноперистый, из 4-8 пар листочков": { kk: "жұп қауырсынды, 4-8 жапырақша жұбынан тұрады", en: "paripinnate, 4-8 pairs of leaflets" },
+  "непарноперистый, 3-7 листочков": { kk: "тақ қауырсынды, 3-7 жапырақша", en: "imparipinnate, 3-7 leaflets" },
+  "лопастный, по краю пильчатый": { kk: "бөлікті, жиегі тісті", en: "lobed, serrate margin" },
+  "эллиптический, пильчатый, заострённый": { kk: "сопақша, тісті, ұшталған", en: "elliptical, serrate, pointed" },
+  "узкий, щетиновидно свёрнутый": { kk: "тар, қылша оралған", en: "narrow, bristle-like rolled" },
+  "мелкий эллиптический, супротивный, ароматный": { kk: "ұсақ сопақша, қарама-қарсы, хош иісті", en: "small elliptical, opposite, aromatic" },
+  "дважды тройчаторассечённый, с узкими долями": {
+    kk: "қос үш бөлікті, тар тілімді",
+    en: "biternately divided into narrow segments",
+  },
+  "узкий, мечевидный, короче цветоноса": { kk: "тар, қылыш тәрізді, гүл сабағынан қысқа", en: "narrow, sword-shaped, shorter than the flower stem" },
+  "перистый, из 5-7 мелких листочков": { kk: "қауырсынды, 5-7 ұсақ жапырақшадан", en: "pinnate, 5-7 small leaflets" },
+  "эллиптический, кожистый, на зиму частично опадает": {
+    kk: "сопақша, былғары тәрізді, қыста ішінара түседі",
+    en: "elliptical, leathery, partly deciduous in winter",
+  },
+  "крупный округлый, кожистый, прикорневой": { kk: "ірі дөңгелек, былғары тәрізді, түбірлік", en: "large rounded, leathery, basal" },
 };
 
 // Перевод описания, народного использования и примечания к фото — по id растения
@@ -368,6 +404,186 @@ export const plantTextById = {
     folkUse: {
       kk: "Алма селекциясында пайдаланылады; жабайы ағаштардың жемісін жинау және оларды зақымдау тыйым салынған — қорғалатын түр.",
       en: "Used in apple breeding; picking fruit from or damaging wild trees is prohibited — a protected species.",
+    },
+  },
+  "pinus-sylvestris": {
+    description: {
+      kk: "Биіктігі 30–40 м-ге дейінгі мәңгі жасыл қылқан жапырақты ағаш, діңінің жоғарғы бөлігінде қызыл-сары қабығы, қос инелі көкшіл-жасыл қылқаны бар. Өзен террасаларындағы құрғақ қарағайлы бормен ерекшеленеді — олардың ішіндегі ең ірісі, Семей бор, Ертіс бойымен созылып жатыр.",
+      en: "An evergreen conifer up to 30–40 m tall with reddish bark on the upper trunk and glaucous-green needles in pairs. Forms dry pine forests on sandy river terraces — the largest, the Semey pine forest, stretches along the Irtysh.",
+    },
+    folkUse: {
+      kk: "Ағашы — өңірдің негізгі құрылыс материалы, шайыры мен қылқаны — халық медицинасында, бор — саңырауқұлақ пен жидек теруге арналған орын.",
+      en: "Its timber is the region's main building material, resin and needles are used in folk medicine, and the forest is a popular place to gather mushrooms and berries.",
+    },
+  },
+  "betula-pendula": {
+    description: {
+      kk: "Биіктігі 20–25 м-ге дейінгі ағаш, тән белгісі — ақ қабығы мен салбыраған бұтақтары. Дала мен орман шекарасында көктеректермен бірге ашық қайыңды тоғайлар мен ормандар түзеді.",
+      en: "A tree up to 20–25 m tall with characteristic white peeling bark and drooping branches. Forms light birch groves and forests together with aspen on the steppe–forest boundary.",
+    },
+    folkUse: {
+      kk: "Көктемде қайың шырынын жинайды, жапырағы мен бүршігі — халық медицинасында, шыбықтары — моншаға арналған сыпыртқы.",
+      en: "Birch sap is collected in spring; the leaves and buds are used in folk medicine, and the branches are made into bathhouse bundles.",
+    },
+  },
+  "populus-tremula": {
+    description: {
+      kk: "Биіктігі 20–30 м-ге дейінгі ағаш, қабығы тегіс, жасылдау-сұр түсті; жапырақтары ұзын жалпақ сабақшада болғандықтан аздаған желде де дірілдейді. Қайыңмен бірге тоғайларда және кесілген орман орындарында өседі.",
+      en: "A tree up to 20–30 m tall with smooth greyish-green bark; its leaves, on long flattened stalks, tremble in the slightest breeze. Grows together with birch in groves and on cleared forest land.",
+    },
+    folkUse: {
+      kk: "Ағашы — сіріңке мен құрылыс материалына, қабығы — қыста бұлан мен қоянға азық.",
+      en: "Its wood is used for matches and building material; the bark is winter food for moose and hares.",
+    },
+  },
+  "caragana-arborescens": {
+    description: {
+      kk: "Биіктігі 2–5 м-ге дейінгі бұта, жұп қауырсынды жапырақтары мен ашық сары көбелек тәрізді гүлдері бар. Құрғақшылық пен аязға төзімді, көбінесе қорғаныш алқаптары мен тірі қоршауларда пайдаланылады.",
+      en: "A shrub up to 2–5 m tall with paripinnate leaves and bright yellow pea-like flowers. Tolerant of drought and frost, often used in shelterbelts and hedges.",
+    },
+    folkUse: {
+      kk: "Тұқымы — құстарға азық, бұта — тірі қоршау және беткейлерді бекіту үшін қолданылады.",
+      en: "Its seeds are bird feed; the shrub is used as a hedge and to stabilise slopes.",
+    },
+  },
+  "rosa-acicularis": {
+    description: {
+      kk: "Биіктігі 1–2 м-ге дейінгі тікенекті бұта, жіңішке инелі тікендері мен қызғылт гүлдері бар. Жемісі (итмұрын) C дәруменіне бай, жаз аяғында піседі.",
+      en: "A thorny shrub up to 1–2 m tall with thin needle-like spines and pink flowers. The fruit (rosehip) is rich in vitamin C and ripens in late summer.",
+    },
+    folkUse: {
+      kk: "Жемісін дәрумендік шай мен қайнатпаларға кептіреді, C дәруменіне бай.",
+      en: "The fruit is dried for vitamin tea and infusions, being rich in vitamin C.",
+    },
+  },
+  "crataegus-sanguinea": {
+    description: {
+      kk: "Биіктігі 4–6 м-ге дейінгі бұта немесе шағын ағаш, тікенді бұтақтары, ақ гүлдері және ашық қызыл жемісі бар. Орман жиегінде, өзен бойында және таулардың бөктерінде өседі.",
+      en: "A shrub or small tree up to 4–6 m tall with thorny branches, white flowers and bright red fruit. Grows on forest edges, along rivers and in foothills.",
+    },
+    folkUse: {
+      kk: "Жемісі мен гүлі — халық медицинасында танымал жүрек дәрісі, ұйқысыздыққа қайнатпа ретінде.",
+      en: "The fruit and flowers are a popular folk remedy for the heart, and an infusion is used for insomnia.",
+    },
+  },
+  "padus-avium": {
+    description: {
+      kk: "Биіктігі 10 м-ге дейінгі ағаш, мамырда гүлдейтін қою шашақтардағы хош иісті ақ гүлдері бар. Өзен бойында және дымқыл ормандарда өседі, жиі орман жиектерінде тоғай түзеді.",
+      en: "A tree up to 10 m tall with fragrant white flowers in dense racemes, blooming in May. Grows along riverbanks and in moist forests, often forming thickets on forest edges.",
+    },
+    folkUse: {
+      kk: "Жемісін пирог толтырмасына және шарапқа пайдаланады, қабығы мен гүлі — халық медицинасында.",
+      en: "The fruit is used for pie filling and infusions; the bark and flowers are used in folk medicine.",
+    },
+  },
+  "hippophae-rhamnoides": {
+    description: {
+      kk: "Биіктігі 3–6 м-ге дейінгі тікенекті бұта, тар күмістей жапырақтары мен бұтақтарын тығыз қаптаған ашық қызғылт сары жемісі бар. Өзен мен бұлақ жағасындағы қиыршықтасты жерлерде өседі.",
+      en: "A thorny shrub up to 3–6 m tall with narrow silvery leaves and bright orange edible berries densely covering the branches. Grows on gravelly riverbanks and streambanks.",
+    },
+    folkUse: {
+      kk: "Жидегі дәрумендерге бай, одан шырғанақ майы мен тосап жасайды.",
+      en: "The berries are a valuable source of vitamins, used to make sea buckthorn oil and jam.",
+    },
+  },
+  "stipa-capillata": {
+    description: {
+      kk: "Қалың бұталары мен ұзын (20 см-ге дейін) қауырсынды қылтанақтары бар астық тұқымдасы, жеміс піскен кезде далада желмен күмістей толқын жасайды. Шалғынды-үкіші даланың тән түрі.",
+      en: "A grass with dense tussocks and long (up to 20 cm) feathery awns that make the steppe shimmer silver in the wind when fruiting. A characteristic species of mixed-grass feather-grass steppe.",
+    },
+    folkUse: {
+      kk: "Даланың сақталуының көрсеткіші; шектен тыс жайылым мен жырту түрдің жойылуына әкеледі.",
+      en: "An indicator of intact steppe; overgrazing and ploughing lead to its disappearance from a site.",
+    },
+  },
+  "artemisia-frigida": {
+    description: {
+      kk: "Күмістей-сұр түсті, қатты бөлінген түкті жапырақтары бар, жеңіл жусан иісі шығатын жартылай бұташа. Құрғақ далалы беткейлер мен тасты жерлерде, көбінесе үкішімен бірге өседі.",
+      en: "A silvery-grey subshrub with finely divided, hairy leaves and a faint wormwood scent. Grows on dry steppe slopes and stony ground, often alongside feather grass.",
+    },
+    folkUse: {
+      kk: "Малға жайылымдық азық, қайнатпасы — халық медицинасында асқазанға арналған құрал.",
+      en: "Used as livestock pasture; an infusion is used in folk medicine as a digestive remedy.",
+    },
+  },
+  "thymus-marschallianus": {
+    description: {
+      kk: "Ұсақ жапырақтары мен сирень-қызғылт шашақтары бар аласа хош иісті жартылай бұташа. Құрғақ далалы және тасты беткейлерде өседі, көптеген тозаңдандырушы жәндіктерді тартады.",
+      en: "A low, aromatic subshrub with small leaves and lilac-pink flower clusters. Grows on dry steppe and rocky slopes, attracting many pollinating insects.",
+    },
+    folkUse: {
+      kk: "Кептірілген шөбін шай мен дәмдеуіш ретінде демдейді, халық медицинасында — жөтелге.",
+      en: "The dried herb is brewed as tea and used as a seasoning; in folk medicine it is used for coughs.",
+    },
+  },
+  "achillea-millefolium": {
+    description: {
+      kk: "Биіктігі 60–80 см-ге дейінгі көпжылдық шөптесін өсімдік, қатты бөлінген қауырсынды жапырақтары мен ұсақ ақ гүлдерінің жалпақ қалқаншалары бар. Шалғындарда, далалы жерлерде және жол бойында өседі.",
+      en: "A perennial herb up to 60–80 cm tall with finely divided, pinnate leaves and flat clusters of small white flowers. Grows in meadows, steppe areas and along roadsides.",
+    },
+    folkUse: {
+      kk: "Халық медицинасындағы ең танымал қан тоқтатушы өсімдіктердің бірі, шай ретінде демдейді.",
+      en: "One of the best-known folk-medicine plants for stopping bleeding; brewed as a tea.",
+    },
+  },
+  "adonis-vernalis": {
+    description: {
+      kk: "Ірі ашық сары жалғыз гүлдері бар көпжылдық өсімдік — көктемгі дала эфемероидтарының алғашқыларының бірі. Құрамында жүрек гликозидтері бар, дәрігер бақылауынсыз ішке қабылдаса улы.",
+      en: "A perennial with large, bright yellow solitary flowers — one of the first steppe ephemeroids of spring. Contains cardiac glycosides and is poisonous if taken internally without medical supervision.",
+    },
+    folkUse: {
+      kk: "Ресми медицинада жүрек дәрісі ретінде тек дәрігердің тағайындауымен қолданылады; табиғаттан жинау шектелген — қорғалатын түр.",
+      en: "Used in conventional medicine as a cardiac remedy strictly on prescription; wild collection is restricted — a protected species.",
+    },
+  },
+  "paeonia-anomala": {
+    description: {
+      kk: "Биіктігі 60–100 см-ге дейінгі көпжылдық өсімдік, ірі қою қызғылт гүлдері және қос үш бөлікті жапырақтары бар. Алтай мен Тарбағатай бөктерінің көлеңкелі ормандары мен орман жиектерінде өседі.",
+      en: "A perennial up to 60–100 cm tall with large dark pink flowers and biternately divided leaves. Grows in shady forests and forest edges in the foothills of the Altai and Tarbagatai.",
+    },
+    folkUse: {
+      kk: "Тамыры халық медицинасында тыныштандырушы құрал ретінде қолданылған; түрі сирек кездеседі және қорғауды қажет етеді.",
+      en: "The root has been used in folk medicine as a sedative; the species is rare and in need of protection.",
+    },
+  },
+  "iris-ruthenica": {
+    description: {
+      kk: "Гүл сабағынан қысқа тар қылыш тәрізді жапырақтары мен ірі емес көк-күлгін гүлдері бар аласа көпжылдық өсімдік. Далалы және орманды-далалы шалғындарда, орман жиектерінде өседі.",
+      en: "A low perennial with narrow sword-shaped leaves shorter than the flower stem and modest blue-violet flowers. Grows in steppe and forest-steppe meadows and on forest edges.",
+    },
+    folkUse: {
+      kk: "Сәндік маңызы бар, мәдениетте талапсыз бақша өсімдігі ретінде өсіріледі.",
+      en: "Of ornamental value; cultivated as an undemanding garden plant.",
+    },
+  },
+  "potentilla-fruticosa": {
+    description: {
+      kk: "Биіктігі 1–1,5 м-ге дейінгі аласа бұта, ұсақ қауырсынды жапырақтары және ірі емес сары гүлдері бар, бүкіл жаз бойы гүлдейді. Таулы өзен жағалауларында, тасты беткейлерде және таулардың бөктерінде өседі.",
+      en: "A low shrub up to 1–1.5 m tall with small pinnate leaves and modest yellow flowers that bloom all summer. Grows along mountain streams, on rocky slopes and in foothills.",
+    },
+    folkUse: {
+      kk: "Жапырағын «курил шайы» деп аталатын танымал шөп шайы ретінде демдейді.",
+      en: "The leaves are brewed as \"Kuril tea\", a popular herbal drink.",
+    },
+  },
+  "rhododendron-dauricum": {
+    description: {
+      kk: "Биіктігі 1–2 м-ге дейінгі бұта, жапырақ жарылмай тұрып ерте көктемде ашық қызғылт гүлдермен гүлдейді; жаппай гүлдеу кезінде тау беткейлері қызғылт түске боялады. Алтай мен Тарбағатайдың тауетегі мен тау ормандарында өседі.",
+      en: "A shrub up to 1–2 m tall that blooms with bright pink flowers in early spring before the leaves emerge; mass flowering turns mountain slopes pink. Grows in the foothills and mountain forests of the Altai and Tarbagatai.",
+    },
+    folkUse: {
+      kk: "Ерте гүлдейтін сәндік өсімдік; гүлдеген бұтақтарды жаппай жинау саны азаюына әкеледі, көп жерде шектелген.",
+      en: "A decorative early-blooming plant; mass cutting of flowering branches reduces its numbers and is restricted in many areas.",
+    },
+  },
+  "bergenia-crassifolia": {
+    description: {
+      kk: "Қар астында қыстайтын ірі былғары тәрізді түбірлік жапырақтары және жапырақсыз гүл сабағында қою қызғылт гүлдерінің тығыз шашақтары бар көпжылдық өсімдік. Тасты тау беткейлері мен жартастарда өседі.",
+      en: "A perennial with large leathery basal leaves that overwinter under snow, and dense clusters of pink flowers on a leafless flower stalk. Grows on rocky mountain slopes and cliffs.",
+    },
+    folkUse: {
+      kk: "Қыстан шыққан ескі жапырақтарын («чагыр шайы») шай ретінде демдейді, тамырсабағы — халық медицинасында.",
+      en: "Old leaves that have overwintered (\"chagyr tea\") are brewed as tea; the rhizome is used in folk medicine.",
     },
   },
 };
