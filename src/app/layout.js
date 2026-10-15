@@ -19,9 +19,9 @@ const mono = IBM_Plex_Mono({
 });
 
 export const metadata = {
-  title: "Flora AI — определитель растений области Абай",
+  title: "Flora AI — определитель растений СКО",
   description:
-    "Школьный исследовательский инструмент для полевого определения растений области Абай.",
+    "Школьный исследовательский инструмент для полевого определения растений СКО.",
 };
 
 export default function RootLayout({ children }) {

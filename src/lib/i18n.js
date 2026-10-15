@@ -5,7 +5,7 @@ import { createContext, useContext, useEffect, useMemo, useState } from "react";
 export const dictionaries = {
   ru: {
     appName: "FLORA AI",
-    appSubtitle: "Полевой определитель растений родного края",
+    appSubtitle: "Интеллектуальный помощник для распознавания растений родного края",
     nav: {
       identify: "Определение",
       wizard: "Определитель по признакам",
