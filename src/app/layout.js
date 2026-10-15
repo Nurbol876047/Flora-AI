@@ -18,10 +18,25 @@ const mono = IBM_Plex_Mono({
   display: "swap",
 });
 
+const title = "Flora AI — определитель растений СКО";
+const description =
+  "Школьный исследовательский инструмент для полевого определения растений СКО.";
+
 export const metadata = {
-  title: "Flora AI — определитель растений СКО",
-  description:
-    "Школьный исследовательский инструмент для полевого определения растений СКО.",
+  title,
+  description,
+  openGraph: {
+    title,
+    description,
+    siteName: "Flora AI",
+    locale: "ru_RU",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title,
+    description,
+  },
 };
 
 export default function RootLayout({ children }) {
