@@ -30,7 +30,6 @@ export default function FloraPage() {
   return (
     <div>
       <h1 className="page-title">{t.flora.title}</h1>
-      <p className="page-intro">{t.flora.intro}</p>
 
       <div className="flora-toolbar">
         <input

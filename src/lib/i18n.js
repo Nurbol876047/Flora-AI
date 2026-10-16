@@ -83,8 +83,6 @@ export const dictionaries = {
     },
     flora: {
       title: "Флора края",
-      intro:
-        "Характерные виды растений СКО: степные, лесостепные и прибрежные сообщества региона.",
       searchPlaceholder: "Поиск по названию (рус., қаз., латынь)…",
       familyAll: "Все семейства",
       habitatAll: "Все местообитания",
@@ -255,8 +253,6 @@ export const dictionaries = {
     },
     flora: {
       title: "Өңір флорасы",
-      intro:
-        "СҚО-ға тән өсімдік түрлері: дала, орманды дала және өңірдің жағалау қауымдастықтары.",
       searchPlaceholder: "Атауы бойынша іздеу (орыс., қаз., латын)…",
       familyAll: "Барлық тұқымдастар",
       habitatAll: "Барлық өсу орындары",
@@ -427,8 +423,6 @@ export const dictionaries = {
     },
     flora: {
       title: "Regional flora",
-      intro:
-        "Characteristic plant species of North Kazakhstan Region: steppe, forest-steppe and riparian communities of the region.",
       searchPlaceholder: "Search by name (Russian, Kazakh, Latin)…",
       familyAll: "All families",
       habitatAll: "All habitats",
