@@ -53,7 +53,7 @@ export const dictionaries = {
         family: "Семейство",
         description: "Описание",
         habitat: "Где растёт",
-        grows_in_region: "Встречается в области Абай",
+        grows_in_region: "Встречается в СКО",
         toxicity: "Ядовитость",
         protected_status: "Охранный статус",
         similar: "Похожие виды",
@@ -84,7 +84,7 @@ export const dictionaries = {
     flora: {
       title: "Флора края",
       intro:
-        "Характерные виды растений области Абай: степные, горные и прибрежные сообщества региона.",
+        "Характерные виды растений СКО: степные, лесостепные и прибрежные сообщества региона.",
       searchPlaceholder: "Поиск по названию (рус., қаз., латынь)…",
       familyAll: "Все семейства",
       habitatAll: "Все местообитания",
@@ -148,7 +148,7 @@ export const dictionaries = {
       title: "О проекте",
       goalTitle: "Цель",
       goal:
-        "Flora AI — учебный исследовательский инструмент для полевого определения растений области Абай силами школьников и краеведов. Проект создан как вспомогательное средство фиксации наблюдений, а не как замена ботанической экспертизы.",
+        "Flora AI — учебный исследовательский инструмент для полевого определения растений СКО силами школьников и краеведов. Проект создан как вспомогательное средство фиксации наблюдений, а не как замена ботанической экспертизы.",
       methodTitle: "Методика",
       method:
         "Определение выполняется в два этапа. Сначала фотография передаётся в открытую ботаническую базу Pl@ntNet, которая по визуальным признакам предлагает до трёх вероятных видов с оценкой уверенности. Затем фотография и результаты Pl@ntNet передаются языковой модели, которая формирует итоговое описание: названия на русском и казахском языках, семейство, внешние признаки, место обитания, сведения о встречаемости в регионе, ядовитости и охранном статусе, а также отличия от похожих видов.",
@@ -225,7 +225,7 @@ export const dictionaries = {
         family: "Тұқымдасы",
         description: "Сипаттамасы",
         habitat: "Өсетін жері",
-        grows_in_region: "Абай облысында кездеседі",
+        grows_in_region: "СҚО-да кездеседі",
         toxicity: "Улылығы",
         protected_status: "Қорғау мәртебесі",
         similar: "Ұқсас түрлер",
@@ -256,7 +256,7 @@ export const dictionaries = {
     flora: {
       title: "Өңір флорасы",
       intro:
-        "Абай облысына тән өсімдік түрлері: дала, тау және өңірдің жағалау қауымдастықтары.",
+        "СҚО-ға тән өсімдік түрлері: дала, орманды дала және өңірдің жағалау қауымдастықтары.",
       searchPlaceholder: "Атауы бойынша іздеу (орыс., қаз., латын)…",
       familyAll: "Барлық тұқымдастар",
       habitatAll: "Барлық өсу орындары",
@@ -320,7 +320,7 @@ export const dictionaries = {
       title: "Жоба туралы",
       goalTitle: "Мақсаты",
       goal:
-        "Flora AI — Абай облысының өсімдіктерін далалық анықтауға арналған оқу-зерттеу құралы. Жоба бақылауларды тіркеуге көмекші құрал ретінде жасалған, ботаникалық сараптаманы алмастырмайды.",
+        "Flora AI — СҚО өсімдіктерін далалық анықтауға арналған оқу-зерттеу құралы. Жоба бақылауларды тіркеуге көмекші құрал ретінде жасалған, ботаникалық сараптаманы алмастырмайды.",
       methodTitle: "Әдістеме",
       method:
         "Анықтау екі кезеңде жүреді. Алдымен фотосурет Pl@ntNet ашық ботаникалық дерекқорына жіберіледі, ол визуалды белгілер бойынша дәлдігі көрсетілген үш түрге дейін ұсынады. Содан кейін фотосурет пен Pl@ntNet нәтижелері тілдік модельге беріледі, ол орысша және қазақша атауларды, тұқымдасын, сырт белгілерін, өсу ортасын, өңірде кездесуін, улылығын, қорғау мәртебесін және ұқсас түрлерден айырмашылығын қалыптастырады.",
@@ -397,7 +397,7 @@ export const dictionaries = {
         family: "Family",
         description: "Description",
         habitat: "Habitat",
-        grows_in_region: "Found in Abai Region",
+        grows_in_region: "Found in North Kazakhstan Region",
         toxicity: "Toxicity",
         protected_status: "Protection status",
         similar: "Similar species",
@@ -428,7 +428,7 @@ export const dictionaries = {
     flora: {
       title: "Regional flora",
       intro:
-        "Characteristic plant species of Abai Region: steppe, mountain and riparian communities of the region.",
+        "Characteristic plant species of North Kazakhstan Region: steppe, forest-steppe and riparian communities of the region.",
       searchPlaceholder: "Search by name (Russian, Kazakh, Latin)…",
       familyAll: "All families",
       habitatAll: "All habitats",
@@ -492,7 +492,7 @@ export const dictionaries = {
       title: "About the project",
       goalTitle: "Goal",
       goal:
-        "Flora AI is an educational research tool for the field identification of plants of Abai Region, built for schoolchildren and local history enthusiasts. The project is meant as an aid for recording observations, not a replacement for botanical expertise.",
+        "Flora AI is an educational research tool for the field identification of plants of North Kazakhstan Region, built for schoolchildren and local history enthusiasts. The project is meant as an aid for recording observations, not a replacement for botanical expertise.",
       methodTitle: "Method",
       method:
         "Identification runs in two steps. First, the photo is sent to the open botanical database Pl@ntNet, which suggests up to three likely species with a confidence score based on visual features. Then the photo and the Pl@ntNet results are passed to a language model, which produces the final description: names in Russian and Kazakh, family, appearance, habitat, occurrence in the region, toxicity and protection status, and differences from similar species.",
